@@ -20,7 +20,7 @@ export default function Weather() {
             <input
               type="search"
               placeholder="Type a city.."
-              className="form-control"
+              className="form-control rounded-pill"
               autoComplete="off"
             />
           </div>
@@ -28,7 +28,7 @@ export default function Weather() {
             <input
               type="submit"
               value="Search"
-              className="btn btn-primary w-100"
+              className="btn btn-info rounded-pill"
             />
           </div>
         </div>
