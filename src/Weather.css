@@ -34,6 +34,7 @@
 
 .Weather .weather-temperature .active:hover {
   text-decoration: none;
+  color: #158496;
 }
 
 .Weather .weather-forecast {
