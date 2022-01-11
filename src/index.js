@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Weather from "./Weather";
 
+import "bootstrap/dist/css/bootstrap.css";
+
+import Weather from "./Weather";
 import "./App.css";
 import Footer from "./Footer";
 
