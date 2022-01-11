@@ -1,0 +1,9 @@
+.Forecast {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(135, 135, 135);
+}
+.forecastTempLow {
+  opacity: 0.6;
+  margin-left: 5px;
+}
