@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Forecast from "./Forecast";
 import axios from "axios";
+//import Loader from "react-loader-spinner";
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
+    //console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
