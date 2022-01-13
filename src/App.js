@@ -10,7 +10,7 @@ import Footer from "./Footer";
 export default function App() {
   return (
     <div className="App">
-      <Weather defaultCity="Paris" />
+      <Weather defaultCity="Berlin" />
       <Footer />
     </div>
   );
