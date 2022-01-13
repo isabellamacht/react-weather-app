@@ -3,16 +3,17 @@ import Forecast from "./Forecast";
 import axios from "axios";
 //import Loader from "react-loader-spinner";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    //console.log(response.data);
+    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
-      date: "Saturday 17:38",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
       humidity: response.data.main.humidity,
@@ -45,7 +46,9 @@ export default function Weather(props) {
         <div className="overview">
           <h1>{weatherData.city}</h1>
           <ul>
-            <li>Last updated: {weatherData.date}</li>
+            <li>
+              <FormattedDate date={weatherData.date} />
+            </li>
             <li className="text-capitalize">{weatherData.description}</li>
           </ul>
         </div>
