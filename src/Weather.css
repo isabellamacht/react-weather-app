@@ -57,9 +57,7 @@
   height: 48px;
   width: 48px;
 }
-canvas {
-  padding-right: 15px;
-}
+
 .Weather .weather-forecast-temperature {
   text-align: center;
   color: rgb(135, 135, 135);
@@ -68,4 +66,8 @@ canvas {
   height: auto;
   line-height: 15px;
   white-space: nowrap;
+}
+
+.WeatherTemp {
+  padding-left: 15px;
 }

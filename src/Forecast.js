@@ -1,5 +1,6 @@
 import React from "react";
 import "./Forecast.css";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Forecast() {
   let forecastData = {
@@ -16,7 +17,7 @@ export default function Forecast() {
             <div className="col" key={index}>
               <div className="forecastDay">{value}</div>
               <div>
-                <img src={forecastData.imgUrl} alt="" />
+                <WeatherIcon code="11d" size={48} />
               </div>
               <div className="forecastTemps">
                 <span className="forecastTempHigh">
