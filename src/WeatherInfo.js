@@ -1,5 +1,5 @@
 import React from "react";
-import Forecast from "./Forecast";
+
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemp from "./WeatherTemp";
@@ -35,7 +35,6 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <Forecast />
     </div>
   );
 }
