@@ -46,7 +46,7 @@ export default function Weather(props) {
             <div className="col-9">
               <input
                 type="search"
-                placeholder="Type a city.."
+                placeholder="Search for a city.."
                 className="form-control rounded-pill"
                 autoComplete="off"
                 onChange={handleCityChange}
